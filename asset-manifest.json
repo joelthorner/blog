@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/blog/static/css/main.654aed43.css",
-    "main.js": "/blog/static/js/main.07642674.js",
+    "main.css": "/blog/static/css/main.fcfe3dc4.css",
+    "main.js": "/blog/static/js/main.7ee65265.js",
     "static/media/inemuifj.png": "/blog/static/media/inemuifj.6e11f6c9fd51b60a6385.png",
     "static/media/www.minitokyo.net_.png": "/blog/static/media/www.minitokyo.net_.e389aa40148569069913.png",
     "static/media/logo.png": "/blog/static/media/logo.53eea2338a037e720e0d.png",
     "index.html": "/blog/index.html",
-    "main.654aed43.css.map": "/blog/static/css/main.654aed43.css.map",
-    "main.07642674.js.map": "/blog/static/js/main.07642674.js.map"
+    "main.fcfe3dc4.css.map": "/blog/static/css/main.fcfe3dc4.css.map",
+    "main.7ee65265.js.map": "/blog/static/js/main.7ee65265.js.map"
   },
   "entrypoints": [
-    "static/css/main.654aed43.css",
-    "static/js/main.07642674.js"
+    "static/css/main.fcfe3dc4.css",
+    "static/js/main.7ee65265.js"
   ]
 }
