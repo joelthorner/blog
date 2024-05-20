@@ -2,13 +2,15 @@ import logo from './logo.svg';
 import { Routes, Route, Outlet, Link } from "react-router-dom";
 import Home from './views/home';
 import Post from './views/post';
+import Tag from './views/tag';
 
 export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
+        <Route path="/blog" element={<Home />} />
         <Route path="/post/:seo" element={<Post />} />
+        <Route path="/tag/:seo" element={<Tag />} />
         <Route path="about" element={<About />} />
         <Route path="dashboard" element={<Dashboard />} />
 
@@ -31,7 +33,7 @@ function Layout() {
           <nav>
             <ul className='flex flex-col'>
               <li>
-                <Link className='flex py-1' to="/">Home</Link>
+                <Link className='flex py-1' to="/blog">Home</Link>
               </li>
               <li>
                 <Link className='flex py-1' to="/about">About</Link>
