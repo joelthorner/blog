@@ -14,7 +14,7 @@ function Home() {
     }
   }, [page]);
 
-  const postsPerPage = 3;
+  const postsPerPage = 5;
 
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
