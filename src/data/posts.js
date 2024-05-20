@@ -5,12 +5,12 @@ export const POSTS = [
   {
     title: 'Vlogger inemuifj',
     seo: 'vlogger-inemuifj',
-    body: `Vlogger i artista, fa videos curts sobre la seva vida, videos tranquils i esteticament minimalistes, molt top. Aquest es el seu canal:<br><br>
+    body: `Vlogger i artista, fa videos curts sobre la seva vida, videos tranquils i esteticament minimalistes, molt top.<br><br>
       <a class="block" target="_blank" title="inemuifj channel" without rel="noreferrer" href="https://youtube.com/@inemuifj?si=FJpN22s3AfT8dHzQ"><img class="max-w-full h-auto block" src=${img_inemuifj} /></a><br>
       Tot esta doblat en JAP/ENG.`,
     categories: ['People'],
     videoYT: 'tzesutJY1ys',
-    tags: ['Artist', 'Youtuber', 'Aesthetic', 'Vlogger', 'Japan'],
+    tags: ['Artist', 'Youtuber', 'Aesthetic', 'Vlogger', 'Japan', 'Calm'],
     date: new Date('05/21/2024'),
     weed: false,
   },
@@ -34,7 +34,7 @@ export const POSTS = [
     body: ``,
     videoYT: 'mEf0xM0FIg0',
     categories: ['Music'],
-    tags: ['Bona onda'],
+    tags: ['Bona onda', 'Electronica'],
     date: new Date('05/19/2024'),
     weed: true,
   },
@@ -44,7 +44,7 @@ export const POSTS = [
     body: '',
     videoYT: 'Z8Y1MalRrDc',
     categories: ['Music'],
-    tags: ['Bona onda'],
+    tags: ['Bona onda', 'Electronica'],
     date: new Date('05/18/2024'),
     weed: true,
   },

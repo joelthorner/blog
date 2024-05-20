@@ -27,34 +27,35 @@ export default function App() {
 
 function Layout() {
   return (
-    <div className="pt-12 pb-12">
-      <div className='container mx-auto px-4 grid grid-cols-[200px_1fr_270px] gap-6 items-start'>
-        <div className='flex flex-col gap-4 sticky top-12'>
-          <img src={logo} width={120} height={120} className="rounded-full" alt="logo" />
-          <div className='font-bold text-xl'>Joel blog</div>
-          <div className='text-gray-500'>Recomano el que m'agrada i em dona la puta gana.</div>
+    <div className="py-6 lg:py-12">
+      <div className='container mx-auto px-2 lg:px-4 flex flex-col gap-y-8 lg:grid lg:grid-cols-[200px_1fr_220px] gap-6 items-start'>
+        <div className='flex flex-col gap-8 lg:gap-4 lg:sticky top-12 w-full'>
+          <div className='flex gap-x-4 items-center px-1 lg:px-0 lg:flex-col lg:items-start lg:gap-4'>
+            <img src={logo} width={120} height={120} className="rounded-full" alt="logo" />
+            <div>
+              <div className='font-bold text-xl'>Joel blog</div>
+              <div className='text-gray-500'>Recomano el que m'agrada i em dona la puta gana.</div>
+            </div>
+          </div>
           <nav>
-            <ul className='flex flex-col'>
-              <li>
-                <Link className='flex py-1' to="/blog">Home</Link>
+            <ul className='flex justify-center lg:flex-col'>
+              <li className='inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full lg:before:hidden'>
+                <Link className='p-2 lg:flex lg:py-1 lg:px-0' to="/blog">Home</Link>
               </li>
-              <li>
-                <Link className='flex py-1' to="/about">About</Link>
+              <li className='inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full lg:before:hidden'>
+                <Link className='p-2 lg:flex lg:py-1 lg:px-0' to="/about">About</Link>
               </li>
-              <li>
-                <Link className='flex py-1' to="/dashboard">Dashboard</Link>
-              </li>
-              <li>
-                <Link className='flex py-1' to="/nothing-here">Nothing Here</Link>
+              <li className='inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full lg:before:hidden'>
+                <Link className='p-2 lg:flex lg:py-1 lg:px-0' to="/dashboard">Dashboard</Link>
               </li>
             </ul>
           </nav>
         </div>
-        <div>
+        <div className='w-full'>
           <Outlet />
         </div>
-        <div className='sticky top-12'>
-          <div className='flex flex-col gap-8'>
+        <div className='w-full lg:sticky top-12 px-1 mt-12 lg:mt-0'>
+          <div className='flex flex-col gap-8 max-w-xs mx-auto'>
             <div>
               <h3 className='text-lg font-medium mb-2'>Categories</h3>
               <CategoriesWidget />

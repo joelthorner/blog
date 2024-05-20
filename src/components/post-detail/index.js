@@ -20,7 +20,7 @@ function PostDetail({ post, showLink = true }) {
 
   return (
     <div className="flex flex-col group bg-white border shadow-sm rounded-2xl overflow-hidden hover:shadow-lg transition">
-      <div className="p-4 md:p-5">
+      <div className="p-3 sm:p-4 md:p-5">
         <div className='flex justify-between'>
           {showLink ? <Link to={`/post/${post.seo}`}>{titleElement}</Link> : titleElement}
           {typeof post.weed !== 'undefined' && post.weed === true && leaf}
@@ -39,7 +39,7 @@ function PostDetail({ post, showLink = true }) {
                   <span className="size-2 bg-gray-600 rounded-full"></span>
                   <span className="size-2 bg-gray-600 rounded-full"></span>
                 </div>
-                <div className="flex justify-center items-center size-full bg-gray-700 text-sm text-gray-400 rounded-sm">{post.website.name}</div>
+                <div className="flex justify-center items-center size-full bg-gray-700 text-xs sm:text-sm text-gray-400 rounded-sm">{post.website.name}</div>
               </div>
 
               <div className="bg-gray-800 rounded-b-lg">
@@ -48,9 +48,9 @@ function PostDetail({ post, showLink = true }) {
             </figure>
           </a>
         )}
-        {typeof post.videoYT !== 'undefined' && post.videoYT.length > 0 && <div className='mt-4'><LiteYouTubeEmbed id={post.videoYT} /></div>}
+        {typeof post.videoYT !== 'undefined' && post.videoYT.length > 0 && <div className='mt-4'><LiteYouTubeEmbed poster="maxresdefault" id={post.videoYT} /></div>}
 
-        <div className='flex items-center justify-between mt-4'>
+        <div className='flex items-center gap-3 flex-wrap justify-between mt-4'>
           <div className='flex gap-1'>
             {post.categories.map(cat =>
               <Link key={cat} className='inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-md text-xs font-medium border border-gray-200 bg-white text-gray-800 shadow-sm' to={`/category/${seoString(cat)}`}>
@@ -58,10 +58,10 @@ function PostDetail({ post, showLink = true }) {
               </Link>
             )}
           </div>
-          <div className='flex gap-1'>
+          <div className='flex gap-1 flex-wrap'>
             {post.tags.map(tag =>
               <Link key={tag} to={`/tag/${seoString(tag)}`}>
-                <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium border border-gray-200 bg-white text-gray-800 shadow-sm">{tag}</span>
+                <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-[10px] sm:text-xs font-medium border border-gray-200 bg-white text-gray-800 shadow-sm">{tag}</span>
               </Link>
             )}
           </div>
