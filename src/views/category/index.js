@@ -4,14 +4,14 @@ import { useParams } from 'react-router-dom';
 import seoString from '../../helpers/seoString';
 import PostList from '../../components/post-list';
 
-function Tag() {
+function Category() {
   const { seo } = useParams();
   const posts = POSTS.filter(p => {
-    const tags = p.tags.map(t => seoString(t));
-    return tags.includes(seo);
+    const categories = p.categories.map(t => seoString(t));
+    return categories.includes(seo);
   });
 
-  const tagTitle = (str) => {
+  const categoryTitle = (str) => {
     return str
       .split('-')
       .map((word, index) => {
@@ -30,10 +30,10 @@ function Tag() {
 
   return (
     <div>
-      <h2 className='mb-4'>Tag: {tagTitle(seo)}</h2>
+      <h2 className='mb-4'>Category: {categoryTitle(seo)}</h2>
       <PostList posts={posts} />
     </div>
   );
 }
 
-export default Tag;
+export default Category;
