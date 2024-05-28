@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "/blog/static/css/main.49715cb8.css",
-    "main.js": "/blog/static/js/main.403f5152.js",
+    "main.js": "/blog/static/js/main.2cd54302.js",
+    "static/media/chocolate_cacao.png": "/blog/static/media/chocolate_cacao.0a650acda14497aa821a.png",
     "static/media/inemuifj.png": "/blog/static/media/inemuifj.6e11f6c9fd51b60a6385.png",
     "static/media/www.minitokyo.net_.png": "/blog/static/media/www.minitokyo.net_.e389aa40148569069913.png",
     "static/media/mistralctronicles.png": "/blog/static/media/mistralctronicles.bc59a3fad7873df3a48f.png",
@@ -10,10 +11,10 @@
     "static/media/perfectblue2.jpg": "/blog/static/media/perfectblue2.0f010625cdac61540fb0.jpg",
     "index.html": "/blog/index.html",
     "main.49715cb8.css.map": "/blog/static/css/main.49715cb8.css.map",
-    "main.403f5152.js.map": "/blog/static/js/main.403f5152.js.map"
+    "main.2cd54302.js.map": "/blog/static/js/main.2cd54302.js.map"
   },
   "entrypoints": [
     "static/css/main.49715cb8.css",
-    "static/js/main.403f5152.js"
+    "static/js/main.2cd54302.js"
   ]
 }
