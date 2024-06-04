@@ -28,7 +28,7 @@ function PostDetail({ post, showLink = true }) {
 
         <div className='mt-2 text-xs text-gray-500'>{formatDate(post.date)}</div>
 
-        {typeof post.body !== 'undefined' && post.body.length > 0 && <div className="mt-4 text-gray-500" dangerouslySetInnerHTML={{ __html: post.body }}></div>}
+        {post.body && <div className="mt-4 text-gray-500">{post.body}</div>}
 
         {typeof post.website !== 'undefined' && (
           <a className='mt-4 block' target="_blank" rel="noreferrer" href={post.website.link}>

@@ -42,12 +42,12 @@ function Layout() {
               <li className='inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full lg:before:hidden'>
                 <Link className='p-2 lg:flex lg:py-1 lg:px-0' to="/blog">Home</Link>
               </li>
-              <li className='inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full lg:before:hidden'>
+              {/* <li className='inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full lg:before:hidden'>
                 <Link className='p-2 lg:flex lg:py-1 lg:px-0' to="/about">About</Link>
               </li>
               <li className='inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full lg:before:hidden'>
                 <Link className='p-2 lg:flex lg:py-1 lg:px-0' to="/dashboard">Dashboard</Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>

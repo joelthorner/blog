@@ -1,7 +1,7 @@
 import React from 'react';
 import { POSTS } from '../../data/posts';
 import groupPostsByYear from '../../helpers/groupPostsByYear';
-import PostSmall from '../../components/post-small';
+import PostList from '../../components/post-list';
 
 function Archives() {
   const groups = groupPostsByYear(POSTS);
@@ -16,9 +16,7 @@ function Archives() {
         <div key={year.year}>
           <h2 className='mb-2'>{year.year}</h2>
           <div className='flex flex-col gap-4'>
-            {year.posts.map(post => (
-              <PostSmall post={post} />
-            ))}
+            <PostList posts={year.posts} postListMode='small' />
           </div>
         </div>
       ))}
